@@ -1,0 +1,115 @@
+.App {
+  font-family: Arial, sans-serif;
+  margin-left: 12rem;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Filters section styling */
+.filters {
+  display: flex;
+  justify-content: center;
+}
+
+.filters select {
+  margin: 0 5px;
+  padding: 5px;
+}
+
+
+/* Users table styling */
+.users-table {
+  width: 100%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.users-table th, .users-table td {
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.users-table tr {
+  border: 1px solid #ccc;
+}
+
+
+/* Row hover effect with gradient background */
+.users-table th {
+  background-color: #8d9092;
+  color: white;
+}
+
+
+/* Row hover effect with gradient background */
+.users-table tr:hover {
+  background: linear-gradient(to right, #8d7b77, #a19b96);
+  color: white;
+}
+
+
+/* User image styling */
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+/* Pagination section styling */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button.active {
+  background-color: #282c34;
+  color: white;
+}
+
+.pagination button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination .control {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination .control:hover {
+  background-color: #979da3;
+}
